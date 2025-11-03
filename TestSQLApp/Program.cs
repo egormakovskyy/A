@@ -8,6 +8,7 @@ namespace TestSQLApp
 {
     public static class Data
     {
+        public static int pass = 1111;
         public static int TotalFloors { get; set; }
         public static List<HumanData> Humans { get; set; } = new List<HumanData>();
         public static int people_created { get; set; } = 0;
@@ -27,7 +28,7 @@ namespace TestSQLApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new Welcome_menu());
         }
     }
 }

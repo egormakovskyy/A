@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿//using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,18 +62,18 @@ namespace TestSQLApp
 
             Data.people_created++;
 
-            DB db = new DB();
+            //DB db = new DB();
 
-            DataTable table = new DataTable();
+            //DataTable table = new DataTable();
 
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            //MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @uL AND `pass` = @uP", db.getConnection());
+            //MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @uL AND `pass` = @uP", db.getConnection());
 
-            command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = Data.people_created;
+            //command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = Data.people_created;
 
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
+            //adapter.SelectCommand = command;
+            //adapter.Fill(table);
 
             MessageBox.Show($"Данные человека {humanNumber} сохранены!\nЭтаж: {targetFloor}, Вес: {weight}");
 
@@ -119,6 +119,11 @@ namespace TestSQLApp
         }
 
         private void TargetField_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WeightField_TextChanged(object sender, EventArgs e)
         {
 
         }

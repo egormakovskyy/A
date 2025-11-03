@@ -48,39 +48,44 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 450);
+            this.panel1.Size = new System.Drawing.Size(978, 540);
             this.panel1.TabIndex = 2;
             // 
             // WeightField
             // 
-            this.WeightField.Location = new System.Drawing.Point(475, 228);
+            this.WeightField.Location = new System.Drawing.Point(581, 274);
+            this.WeightField.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.WeightField.Multiline = true;
             this.WeightField.Name = "WeightField";
-            this.WeightField.Size = new System.Drawing.Size(248, 87);
+            this.WeightField.Size = new System.Drawing.Size(302, 104);
             this.WeightField.TabIndex = 3;
+            this.WeightField.TextChanged += new System.EventHandler(this.WeightField_TextChanged);
             this.WeightField.Enter += new System.EventHandler(this.WeightField_Enter);
             this.WeightField.Leave += new System.EventHandler(this.WeightField_Leave);
             // 
             // TargetField
             // 
-            this.TargetField.Location = new System.Drawing.Point(78, 228);
+            this.TargetField.Location = new System.Drawing.Point(95, 274);
+            this.TargetField.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TargetField.Multiline = true;
             this.TargetField.Name = "TargetField";
-            this.TargetField.Size = new System.Drawing.Size(248, 87);
+            this.TargetField.Size = new System.Drawing.Size(302, 104);
             this.TargetField.TabIndex = 2;
             this.TargetField.TextChanged += new System.EventHandler(this.TargetField_TextChanged);
+            this.TargetField.Enter += new System.EventHandler(this.TargetField_Enter);
             this.TargetField.Leave += new System.EventHandler(this.TargetField_Leave);
-            this.TargetField.Enter += new System.EventHandler(this.TargetField_Enter); 
             // 
             // CreateHuman
             // 
             this.CreateHuman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.CreateHuman.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CreateHuman.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.CreateHuman.Location = new System.Drawing.Point(0, 382);
+            this.CreateHuman.Location = new System.Drawing.Point(0, 458);
+            this.CreateHuman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CreateHuman.Name = "CreateHuman";
-            this.CreateHuman.Size = new System.Drawing.Size(800, 68);
+            this.CreateHuman.Size = new System.Drawing.Size(978, 82);
             this.CreateHuman.TabIndex = 1;
             this.CreateHuman.Text = "Создать человека";
             this.CreateHuman.UseVisualStyleBackColor = false;
@@ -93,8 +98,9 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 155);
+            this.panel2.Size = new System.Drawing.Size(978, 186);
             this.panel2.TabIndex = 0;
             // 
             // CloseButton
@@ -103,9 +109,10 @@
             this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CloseButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.CloseButton.Location = new System.Drawing.Point(753, 9);
+            this.CloseButton.Location = new System.Drawing.Point(920, 11);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(35, 40);
+            this.CloseButton.Size = new System.Drawing.Size(41, 48);
             this.CloseButton.TabIndex = 1;
             this.CloseButton.Text = "x";
             // 
@@ -115,19 +122,21 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Cyan;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(800, 155);
+            this.label1.Size = new System.Drawing.Size(978, 186);
             this.label1.TabIndex = 0;
             this.label1.Text = "Меню создания человека";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CreateHumanForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(978, 540);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CreateHumanForm";
             this.Text = "CreateHumanForm";
             this.panel1.ResumeLayout(false);
